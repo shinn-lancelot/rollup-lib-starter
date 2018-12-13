@@ -1,0 +1,33 @@
+{
+  "name": "rollup-lib-starter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/rollup-lib-starter.cjs.js",
+  "module": "dist/rollup-lib-starter.esm.js",
+  "browser": "dist/rollup-lib-starter.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run watch",
+    "watch": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "rollup-lib-starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinn-lancelot/rollup-lib-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shinn-lancelot/rollup-lib-starter/issues"
+  },
+  "readme": "README.md",
+  "author": "shinn_lancelot",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.67.4",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.0"
+  }
+}
