@@ -2,9 +2,9 @@
   "name": "rollup-lib-starter",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/rollup-lib-starter.cjs.js",
-  "module": "dist/rollup-lib-starter.esm.js",
-  "browser": "dist/rollup-lib-starter.umd.js",
+  "main": "dist/rolluplib.cjs.js",
+  "module": "dist/rolluplib.esm.js",
+  "browser": "dist/rolluplib.umd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run watch",
@@ -26,8 +26,12 @@
   "license": "MIT",
   "devDependencies": {
     "rollup": "^0.67.4",
+    "rollup-plugin-buble": "^0.19.6",
     "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-flow-no-whitespace": "^1.0.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-uglify": "^6.0.0"
+    "rollup-plugin-terser": "^3.0.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "uglify-js": "^3.4.9"
   }
 }
