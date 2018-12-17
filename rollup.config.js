@@ -7,13 +7,13 @@ import pkg from './package.json'
 
 const production = !process.env.ROLLUP_WATCH
 const version = process.env.VERSION || pkg.version
+const libName = "rollupLib" || pkg.name;
 const banner =
     '/*\n' +
-    ` * rollup-lib-starter v${version}\n` +
+    ` * ${libName} v${version}\n` +
     ` * (c) 2018-${new Date().getFullYear()} ${pkg.author}\n` +
     ` * Released under the ${pkg.license} License.\n` +
     ' */';
-const libName = 'rollupLib' || pkg.name
 const outPath = './dist/'
 const outFileInfo = {
     'cjs': {

@@ -1,5 +1,5 @@
 /*
- * rollup-lib-starter v0.0.0
+ * rollupLib v0.0.0
  * (c) 2018-2018 shinn_lancelot
  * Released under the MIT License.
  */
