@@ -16,17 +16,15 @@ const banner =
     ' */';
 const outPath = './dist/'
 const outFileInfo = {
-    'cjs': {
-        'dev': pkg.main,
-        'prod': outPath + libName.toLowerCase() + '.cjs.min.js'
+    'dev': {
+        'cjs': pkg.main,
+        'esm': pkg.module,
+        'umd': pkg.browser
     },
-    'esm': {
-        'dev': pkg.module,
-        'prod': outPath + libName.toLowerCase() + '.esm.min.js'
-    },
-    'umd': {
-        'dev': pkg.browser,
-        'prod': outPath + libName.toLowerCase() + '.umd.min.js'
+    'prod': {
+        'cjs': outPath + libName.toLowerCase() + '.cjs.min.js',
+        'esm': outPath + libName.toLowerCase() + '.esm.min.js',
+        'umd': outPath + libName.toLowerCase() + '.umd.min.js'
     }
 }
 
@@ -35,7 +33,7 @@ export default [
         input: 'src/main.js',
         output: [
             {
-                file: production ? outFileInfo.cjs.prod : outFileInfo.cjs.dev,
+                file: production ? outFileInfo.prod.cjs : outFileInfo.dev.cjs,
                 format: 'cjs',
                 banner: banner,
                 name: libName
@@ -53,7 +51,7 @@ export default [
         input: 'src/main.js',
         output: [
             {
-                file: production ? outFileInfo.esm.prod : outFileInfo.esm.dev,
+                file: production ? outFileInfo.prod.esm : outFileInfo.dev.esm,
                 format: 'es',
                 banner: banner,
                 name: libName
@@ -71,7 +69,7 @@ export default [
         input: 'src/main.js',
         output: [
             {
-                file: production ? outFileInfo.umd.prod : outFileInfo.umd.dev,
+                file: production ? outFileInfo.prod.umd : outFileInfo.dev.umd,
                 format: 'umd',
                 banner: banner,
                 name: libName
