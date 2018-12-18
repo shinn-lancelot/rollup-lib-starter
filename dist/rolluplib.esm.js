@@ -45,7 +45,7 @@ defaultExport.play = function play (arg) {
 var rollupLib = function rollupLib(options) {
     if ( options === void 0 ) options = {};
 
-    this.options = defaultExport.extend(defaultOptions, options);// 扩展选项
+    this.options = defaultExport.extend(JSON.parse(JSON.stringify(defaultOptions)), options);// 扩展选项
 };
 
 rollupLib.prototype.hello = function hello () {

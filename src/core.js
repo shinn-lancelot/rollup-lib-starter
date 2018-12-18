@@ -7,7 +7,7 @@ export default class rollupLib {
      * @param {*} options 
      */
     constructor(options = {}) {
-        this.options = common.extend(defaultOptions, options);    // 扩展选项
+        this.options = common.extend(JSON.parse(JSON.stringify(defaultOptions)), options);    // 扩展选项
     }
 
     hello() {

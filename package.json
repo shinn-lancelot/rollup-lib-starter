@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/rolluplib.cjs.js",
   "module": "dist/rolluplib.esm.js",
-  "browser": "dist/rolluplib.umd.js",
+  "browser": "dist/rolluplib.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run watch",
