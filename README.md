@@ -19,7 +19,7 @@ rollup.config.js —— rollup打包工具的配置文件（为默认名称）
     npm install
     ```
 
-2. 运行开发环境（仅进行打包，不开启web服务，若要运行example内index.html。请另开启web服务）
+2. 运行开发环境（仅进行打包，不开启web服务，若要运行example内index.html。请另开启web服务）
 
     ```
     npm run dev
@@ -42,7 +42,7 @@ rollup.config.js —— rollup打包工具的配置文件（为默认名称）
     4. 发布到NPM，执行npm publish即可
 * 使用类库
     1. 方式一（NPM）：在平时的项目目录下执行npm install LIBNAME --save即完成类库安装（此操作注意镜像源，比如使用的是taonpm镜像源，则在发布到NPM之后需要等待taonpm同步完类库之后才能安装成功）。然后使用CommonJS规范使用即可
-    2. 方式二（script）：直接使用unpkg提供的CDN即可，在发布到NPM之后即可直接使用。比如："https://unpkg.com/LIBNAME/dist/LIBNAME.min.js"。不过速度略慢，也可考虑将类库提交到cdnjs或者直接下载类库文件到本地项目。
+    2. 方式二（script）：直接使用unpkg提供的CDN即可，在发布到NPM之后即可直接使用。比如："https://unpkg.com/LIBNAME/dist/LIBNAME.min.js"。 不过速度略慢，也可考虑将类库提交到cdnjs或者直接下载类库文件到本地项目。
 
 # 其它说明
 
