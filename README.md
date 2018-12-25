@@ -9,6 +9,7 @@
 - LICENSE —— 协议文件
 - package-lock.json —— npm锁文件（包含需要依赖库及版本）
 - package.json —— npm配置文件
+- README.md —— 项目README文件，使用前必读
 - rollup.config.js —— rollup打包工具的配置文件（为默认名称）
 
 # 如何运行
