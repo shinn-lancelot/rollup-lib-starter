@@ -2,14 +2,14 @@
 
 # 目录结构
 
-/dist —— 开发与生产环境打包类库后存放的目录
-/example —— 用于开发测试类库的目录
-/src —— 类库核心代码目录
-.gitignore —— git忽略文件
-LICENSE —— 协议文件
-package-lock.json —— npm锁文件（包含需要依赖库及版本）
-package.json —— npm配置文件
-rollup.config.js —— rollup打包工具的配置文件（为默认名称）
+- /dist —— 开发与生产环境打包类库后存放的目录
+- /example —— 用于开发测试类库的目录
+- /src —— 类库核心代码目录
+- .gitignore —— git忽略文件
+- LICENSE —— 协议文件
+- package-lock.json —— npm锁文件（包含需要依赖库及版本）
+- package.json —— npm配置文件
+- rollup.config.js —— rollup打包工具的配置文件（为默认名称）
 
 # 如何运行
 
