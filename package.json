@@ -1,7 +1,7 @@
 {
   "name": "rollup-lib-starter",
   "version": "0.0.0",
-  "description": "",
+  "description": "Rollup-lib-starter,that is a project template which using Rollup to create a library.一个使用Rollup打包工具来编写js库的项目模板。",
   "main": "dist/rolluplib.cjs.js",
   "module": "dist/rolluplib.esm.js",
   "browser": "dist/rolluplib.js",
