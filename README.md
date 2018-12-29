@@ -57,4 +57,4 @@ It is recommended to publish to the NPM or CDN to use the library.
 
 1. Es6 is recommended for developing library.
 2. Main config file is rollup.config.js and package.json.
-3. The dist path need to add version repository.
+3. The travis continuous integration tool needs to be configured on the travis official website for automatic build deployment.
