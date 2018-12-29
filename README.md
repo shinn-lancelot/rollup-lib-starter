@@ -20,6 +20,10 @@ A project template which using Rollup to create a library.
 - README.md —— The project README(EN) file.
 - rollup.config.js —— The rollup config file.
 
+### Project document
+
+Project documentation, built using travis and deployed to github pages. [rollup-lib-starter document](https://shinn-lancelot.github.io/rollup-lib-starter/)
+
 ### How to run
 
 1. Install dependency packages.

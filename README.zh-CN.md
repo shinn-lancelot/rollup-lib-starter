@@ -20,6 +20,10 @@
 - README.md —— 项目README（英文）文件，使用前必读。
 - rollup.config.js —— rollup打包工具的配置文件（为默认名称）。
 
+### 项目文档
+
+项目文档，使用travis构建并部署到github pages。[rollup-lib-starter document](https://shinn-lancelot.github.io/rollup-lib-starter/)
+
 ### 如何运行
 
 1. 安装依赖包
