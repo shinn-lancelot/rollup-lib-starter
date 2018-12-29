@@ -1,0 +1,53 @@
+{
+    "title": "rollup-lib-starter",
+    "author": "shinn_lancelot",
+    "description": "rollup-lib-starter document",
+    "language": "en",
+    "gitbook": "^3.2.3",
+    "structure": {
+        "readme": "readme.md"
+    },
+    "plugins": [
+        "-sharing",
+        "expandable-chapters-small",
+        "anchors",
+        "anchor-navigation-ex",
+        "github",
+        "github-buttons",
+        "edit-link",
+        "donate",
+        "theme-vuejs",
+        "scripts"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "showLevel": false
+        },
+        "github": {
+            "url": "https://github.com/shinn-lancelot/rollup-lib-starter"
+        },
+        "github-buttons": {
+            "buttons": [
+                {
+                    "user": "shinn-lancelot",
+                    "repo": "rollup-lib-starter",
+                    "type": "star",
+                    "size": "small",
+                    "count": true
+                }
+            ]
+        },
+        "donate": {
+            "wechat": "",
+            "alipay": "",
+            "title": "",
+            "button": "Donate",
+            "wechatText": "WeChat Pay",
+            "alipayText": "Alipay"
+        },
+        "edit-link": {
+            "base": "https://github.com/shinn-lancelot/rollup-lib-starter/tree/master/doc",
+            "label": "Edit This Page"
+        }
+    }
+}
