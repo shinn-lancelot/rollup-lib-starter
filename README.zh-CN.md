@@ -1,5 +1,5 @@
-* [README_zh-CN](./README_zh-CN.md)
-* [README](README.md)
+* [中文](README.zh-CN.md)
+* [English](README.md)
 
 ### rollup-lib-starter是什么
 
