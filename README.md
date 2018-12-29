@@ -8,9 +8,11 @@ A project template which using Rollup to create a library.
 ### The project content
 
 - /dist —— Dev and prod environment library path.
+- /doc —— Project documentation directory, using gitbook to write documentation.
 - /example —— The example path.
 - /src —— The source code path.
 - .gitignore —— The gitignore file.
+- .travis.yml —— Travis continues to integrate tool configuration files.
 - LICENSE —— The LISENSE file.
 - package-lock.json —— The NPM lock file.
 - package.json —— The NPM config file.

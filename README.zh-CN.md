@@ -7,16 +7,18 @@
 
 ### 目录结构
 
-- /dist —— 开发与生产环境打包类库后存放的目录
-- /example —— 用于开发测试类库的目录
-- /src —— 类库核心代码目录
-- .gitignore —— git忽略文件
-- LICENSE —— 协议文件
-- package-lock.json —— npm锁文件（包含需要依赖库及版本）
-- package.json —— npm配置文件
-- README_zh-CN.md —— 项目README（中文）文件，使用前必读
-- README.md —— 项目README（英文）文件，使用前必读
-- rollup.config.js —— rollup打包工具的配置文件（为默认名称）
+- /dist —— 开发与生产环境打包类库后存放的目录。
+- /doc —— 项目文档目录，使用gitbook编写文档。
+- /example —— 用于开发测试类库的目录。
+- /src —— 类库核心代码目录。
+- .gitignore —— git忽略文件。
+- .travis.yml —— travis持续集成工具配置文件。
+- LICENSE —— 协议文件。
+- package-lock.json —— npm锁文件（包含需要依赖库及版本）。
+- package.json —— npm配置文件。
+- README_zh-CN.md —— 项目README（中文）文件，使用前必读。
+- README.md —— 项目README（英文）文件，使用前必读。
+- rollup.config.js —— rollup打包工具的配置文件（为默认名称）。
 
 ### 如何运行
 
@@ -56,3 +58,4 @@
 1. 类库建议使用es6开发
 2. 配置文件主要为rollup.config.js及package.json。包含类库名称，版本，打包目录等配置。
 3. 与平时开发不同，注意dist目录需要提交到版本库。
+4. travis持续集成工具使用需在travis官网相应项目配置才可进行自动构建部署。
