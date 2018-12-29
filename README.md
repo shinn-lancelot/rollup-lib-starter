@@ -16,7 +16,7 @@ A project template which using Rollup to create a library.
 - LICENSE —— The LISENSE file.
 - package-lock.json —— The NPM lock file.
 - package.json —— The NPM config file.
-- README_zh-CN.md —— The project README(zh-CN) file.
+- README.zh-CN.md —— The project README(zh-CN) file.
 - README.md —— The project README(EN) file.
 - rollup.config.js —— The rollup config file.
 
