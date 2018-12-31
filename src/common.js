@@ -16,7 +16,7 @@ export default class {
                     let childObj =obj[key],
                         childNewObj = newObj[key];
                     for (let k in childNewObj) {
-                        childObj[k] = childNewObj[k]
+                        childObj[k] = childNewObj[k];
                     }
                     obj[key] = childObj;
                 } else {
@@ -32,6 +32,6 @@ export default class {
      * @param {*} arg 
      */
     static play(arg) {
-        console.log('play ' + arg)
+        console.log('play ' + arg);
     }
 }

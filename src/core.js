@@ -1,5 +1,5 @@
-import defaultOptions from './defaultoptions'   // 导入默认选项
-import common from './common'   // 导入通用静态函数类
+import defaultOptions from './defaultoptions';   // 导入默认选项
+import common from './common';   // 导入通用静态函数类
 
 export default class rollupLib {
     /**
@@ -11,10 +11,10 @@ export default class rollupLib {
     }
 
     hello() {
-        console.log('hello ' + this.options.content)
+        console.log('hello ' + this.options.content);
     }
 
     play(arg) {
-        common.play(arg)    // 调用通用静态类的play函数
+        common.play(arg);    // 调用通用静态类的play函数
     }
 }
