@@ -10,7 +10,7 @@ var defaultOptions = {
 };
 
 /**
- * 通用静态函数类
+ * General static function class.
  */
 var defaultExport = function defaultExport () {};
 
@@ -36,9 +36,9 @@ defaultExport.extend = function extend (obj, newObj) {
 };
 
 /**
-   * 内部play函数
-   * @param {*} arg
-   */
+ * Internal play function
+ * @param {*} arg
+ */
 defaultExport.play = function play (arg) {
   console.log('play ' + arg);
 };
@@ -46,7 +46,7 @@ defaultExport.play = function play (arg) {
 var rollupLib = function rollupLib (options) {
   if ( options === void 0 ) options = {};
 
-  this.options = defaultExport.extend(JSON.parse(JSON.stringify(defaultOptions)), options); // 扩展选项
+  this.options = defaultExport.extend(JSON.parse(JSON.stringify(defaultOptions)), options); // Extended option.
 };
 
 rollupLib.prototype.hello = function hello () {
@@ -54,7 +54,7 @@ rollupLib.prototype.hello = function hello () {
 };
 
 rollupLib.prototype.play = function play (arg) {
-  defaultExport.play(arg); // 调用通用静态类的play函数
+  defaultExport.play(arg); // Call the play function of the generic static class.
 };
 
 export default rollupLib;

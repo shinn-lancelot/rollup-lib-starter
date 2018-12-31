@@ -1,13 +1,13 @@
-import defaultOptions from './defaultoptions' // 导入默认选项
-import common from './common' // 导入通用静态函数类
+import defaultOptions from './defaultoptions' // Import default options.
+import common from './common' // Import generic static function classes.
 
 export default class rollupLib {
   /**
-     * 初始化构造函数
-     * @param {*} options
-     */
+   * Initialization constructor
+   * @param {*} options
+   */
   constructor (options = {}) {
-    this.options = common.extend(JSON.parse(JSON.stringify(defaultOptions)), options) // 扩展选项
+    this.options = common.extend(JSON.parse(JSON.stringify(defaultOptions)), options) // Extended option.
   }
 
   hello () {
@@ -15,6 +15,6 @@ export default class rollupLib {
   }
 
   play (arg) {
-    common.play(arg) // 调用通用静态类的play函数
+    common.play(arg) // Call the play function of the generic static class.
   }
 }

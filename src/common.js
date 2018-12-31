@@ -1,12 +1,12 @@
 /**
- * 通用静态函数类
+ * General static function class.
  */
 export default class {
   /**
-     * 扩展对象函数
-     * @param {*} obj
-     * @param {*} newObj
-     */
+   * Extended object function.
+   * @param {*} obj
+   * @param {*} newObj
+   */
   static extend (obj, newObj) {
     for (let key in newObj) {
       if (!(key in obj)) {
@@ -29,9 +29,9 @@ export default class {
   }
 
   /**
-     * 内部play函数
-     * @param {*} arg
-     */
+   * Internal play function
+   * @param {*} arg
+   */
   static play (arg) {
     console.log('play ' + arg)
   }
