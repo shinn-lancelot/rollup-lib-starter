@@ -11,6 +11,9 @@
 - /doc —— 项目文档目录，使用gitbook编写文档。
 - /example —— 用于开发测试类库的目录。
 - /src —— 类库核心代码目录。
+- .editorconfig —— 代码风格格式配置文件。
+- .eslintignore —— eslint检查工具忽略文件。
+- .eslintrc.js —— eslint检查工具配置文件。
 - .gitignore —— git忽略文件。
 - .travis.yml —— travis持续集成工具配置文件。
 - LICENSE —— 协议文件。
@@ -63,3 +66,5 @@
 2. 配置文件主要为rollup.config.js及package.json。包含类库名称，版本，打包目录等配置。
 3. 与平时开发不同，注意dist目录需要提交到版本库。
 4. travis持续集成工具使用需在travis官网相应项目配置才可进行自动构建部署。
+5. 项目遵循standard规范，也可自行修改。
+6. 使用commitizen规范git提交。使用npm run commit来替代git commit。

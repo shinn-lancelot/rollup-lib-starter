@@ -11,6 +11,9 @@ A project template which using Rollup to create a library.
 - /doc —— Project documentation directory, using gitbook to write documentation.
 - /example —— The example path.
 - /src —— The source code path.
+- .editorconfig —— Code style format configuration file.
+- .eslintignore —— Eslint check tool ignores files.
+- .eslintrc.js —— Eslint check tool configuration file.
 - .gitignore —— The gitignore file.
 - .travis.yml —— Travis continues to integrate tool configuration files.
 - LICENSE —— The LISENSE file.
@@ -60,5 +63,8 @@ It is recommended to publish to the NPM or CDN to use the library.
 ### Attention
 
 1. Es6 is recommended for developing library.
-2. Main config file is rollup.config.js and package.json.
-3. The travis continuous integration tool needs to be configured on the travis official website for automatic build deployment.
+2. The configuration files are mainly rollup.config.js and package.json. Contains configuration such as class library name, version, and package directory.
+3. Unlike usual development, note that the dist directory needs to be submitted to the repository.
+4. The travis continuous integration tool needs to be configured on the travis official website for automatic build deployment.
+5. The project follows the standard specification and can be modified by itself.
+6. Submit using the commitizen specification git. Use npm run commit instead of git commit.
