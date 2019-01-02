@@ -9,6 +9,9 @@
     },
     "plugins": [
         "-sharing",
+        "search",
+        "sharing-plus",
+        "search-pro",
         "expandable-chapters-small",
         "anchors",
         "anchor-navigation-ex",
@@ -17,9 +20,23 @@
         "edit-link",
         "donate",
         "theme-vuejs",
-        "scripts"
+        "scripts",
+        "versions-select"
     ],
     "pluginsConfig": {
+        "sharing": {
+            "all": [
+                "facebook",
+                "google",
+                "qq",
+                "twitter",
+                "weibo"
+            ]
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
+        },
         "anchor-navigation-ex": {
             "showLevel": false
         },
@@ -48,6 +65,14 @@
         "edit-link": {
             "base": "https://github.com/shinn-lancelot/rollup-lib-starter/tree/master/doc",
             "label": "Edit This Page"
+        },
+        "versions": {
+            "options": [
+                {
+                    "value": "https://hillpy.github.io/rollup-lib-starter/",
+                    "text": "v0.0.0"
+                }
+            ]
         }
     }
 }
