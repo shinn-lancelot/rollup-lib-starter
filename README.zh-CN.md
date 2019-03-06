@@ -7,6 +7,8 @@
 
 ### 目录结构
 
+- /build —— 构建配置目录。
+- /build/rollup.config.js —— rollup打包工具的配置文件（为默认名称）。
 - /dist —— 开发与生产环境打包类库后存放的目录。
 - /doc —— 项目文档目录，使用gitbook编写文档。
 - /example —— 用于开发测试类库的目录。
@@ -21,7 +23,6 @@
 - package.json —— npm配置文件。
 - README.zh-CN.md —— 项目README（中文）文件，使用前必读。
 - README.md —— 项目README（英文）文件，使用前必读。
-- rollup.config.js —— rollup打包工具的配置文件（为默认名称）。
 
 ### 项目文档
 
@@ -35,7 +36,7 @@
     npm install
     ```
 
-2. 运行开发环境（仅进行打包，不开启web服务，若要运行example内index.html。请另开启web服务）
+2. 运行开发环境
 
     ```
     npm run dev
@@ -68,3 +69,4 @@
 4. travis持续集成工具使用需在travis官网相应项目配置才可进行自动构建部署。
 5. 项目遵循standard规范，也可自行修改。
 6. 使用commitizen规范git提交。使用npm run commit来替代git commit。
+7. 如果不想使用gitbook编写文档，或许你可以尝试下vuepress。

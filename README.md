@@ -7,6 +7,8 @@ A project template for writing a js library using the Rollup packaging tool.
 
 ### The project content
 
+- /build —— The build config file path.
+- /build/rollup.config.js —— The rollup config file.
 - /dist —— Dev and prod environment library path.
 - /doc —— Project documentation directory, using gitbook to write documentation.
 - /example —— The example path.
@@ -21,7 +23,6 @@ A project template for writing a js library using the Rollup packaging tool.
 - package.json —— The NPM config file.
 - README.zh-CN.md —— The project README(zh-CN) file.
 - README.md —— The project README(EN) file.
-- rollup.config.js —— The rollup config file.
 
 ### Project document
 
@@ -68,3 +69,4 @@ It is recommended to publish to the NPM or CDN to use the library.
 4. The travis continuous integration tool needs to be configured on the travis official website for automatic build deployment.
 5. The project follows the standard specification and can be modified by itself.
 6. Submit using the commitizen specification git. Use npm run commit instead of git commit.
+7. If you don't like gitbook, maybe you can try vuepress.

@@ -7,12 +7,13 @@
   "browser": "dist/rolluplib.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run watch",
+    "watch": "rollup -c build/rollup.config.js -w",
+    "build": "rollup -c build/rollup.config.js",
     "lint:init": "eslint --init",
     "lint": "eslint --fix --ext .js src",
     "commit": "git-cz",
-    "dev": "npm run watch",
-    "watch": "rollup -c -w",
-    "build": "rollup -c"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "keywords": [
     "rollup-lib-starter"
@@ -29,6 +30,9 @@
   "license": "MIT",
   "devDependencies": {
     "commitizen": "^3.0.5",
+    "conventional-changelog": "^3.0.6",
+    "conventional-changelog-cli": "^2.0.12",
+    "cssnano": "^4.1.10",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.11.1",
     "eslint-config-standard": "^12.0.0",
@@ -36,12 +40,16 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "rollup": "^0.67.4",
+    "node-sass": "^4.11.0",
+    "rollup": "^1.4.1",
     "rollup-plugin-buble": "^0.19.6",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-flow-no-whitespace": "^1.0.0",
+    "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-terser": "^3.0.0"
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^4.0.4"
   },
   "config": {
     "commitizen": {

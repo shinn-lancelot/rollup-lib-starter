@@ -1,6 +1,6 @@
 /*
- * rollupLib v0.0.0
- * (c) 2018-2018 shinn_lancelot
+ * RollupLib v0.0.0
+ * (c) 2018-2019 shinn_lancelot
  * Released under the MIT License.
  */
 'use strict';
@@ -45,18 +45,18 @@ defaultExport.play = function play (arg) {
   console.log('play ' + arg);
 };
 
-var rollupLib = function rollupLib (options) {
+var RollupLib = function RollupLib (options) {
   if ( options === void 0 ) options = {};
 
   this.options = defaultExport.extend(JSON.parse(JSON.stringify(defaultOptions)), options); // Extended option.
 };
 
-rollupLib.prototype.hello = function hello () {
+RollupLib.prototype.hello = function hello () {
   console.log('hello ' + this.options.content);
 };
 
-rollupLib.prototype.play = function play (arg) {
+RollupLib.prototype.play = function play (arg) {
   defaultExport.play(arg); // Call the play function of the generic static class.
 };
 
-module.exports = rollupLib;
+module.exports = RollupLib;
