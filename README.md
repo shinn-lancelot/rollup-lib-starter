@@ -3,7 +3,7 @@
 
 ### What is rollup-lib-starter
 
-A project template for writing a js library using the Rollup packaging tool.
+A project boilerplate for writing a js library using the Rollup packaging tool.
 
 ### The project content
 

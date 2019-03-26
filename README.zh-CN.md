@@ -3,7 +3,7 @@
 
 ### rollup-lib-starter是什么
 
-一个使用Rollup打包工具来编写js库的项目模板。
+一个使用Rollup打包工具来编写js库的项目样板。
 
 ### 目录结构
 
