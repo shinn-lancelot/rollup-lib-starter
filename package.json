@@ -1,7 +1,7 @@
 {
   "name": "rollup-lib-starter",
   "version": "0.0.0",
-  "description": "A project boilerplate for writing a js library using the Rollup packaging tool.一个使用Rollup打包工具来编写js库的项目样板。",
+  "description": "A project boilerplate for writing a js library using the Rollup packaging tool. 一个使用Rollup打包工具来编写js库的项目样板。",
   "main": "dist/rolluplib.cjs.js",
   "module": "dist/rolluplib.esm.js",
   "browser": "dist/rolluplib.js",
